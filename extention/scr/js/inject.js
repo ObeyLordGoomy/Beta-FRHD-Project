@@ -22,19 +22,19 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+
 (() => {
-    function on(){
-        return JSON.parse(localStorage.enabled);
-    }
+    const page = document.location.href,
+        loc = document.location.pathname.toLocaleLowerCase().slice(1).split('/');
 
-    function set(m = !0){
-        localStorage.enabled = JSON.stringify(m);
+    setInterval(()=>{
+        if(document.location.href != page) return document.location.reload();
+    }, 1000);
+    if(loc[0] == 'u' && (loc[1] == 'obeylordgoomy'||loc[1] == 'calculus')){
+        $('.profile-username').after('<div class="flex-item flex-item-no-shrink"><span class="admin_icon profile-badge" title="BetaFRHD Admin"></span></div>');
+        (loc[1] == 'obeylordgoomy') && ($('h3:contains(ObeyLordGoomy)')[0].style.color = '#bf25bf');
     }
-
-    if (localStorage.enabled == void 0) set();
-    alert(1);
-    /*
-     * 1. Check if enabled
-     * 2. If so add css and javascript to page
-     */
+    if(loc[0] == 't'){
+        $('.track-comment[data-d_name="ObeyLordGoomy"] a.bold').css('color: #bf25bf');
+    }
 })();

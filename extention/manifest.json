@@ -4,6 +4,16 @@
     "version": "0.0",
     "description": "Replaces the current assets used in FreeRiderHD with the older (and better) ones.",
     "author": "Calculus & GoodraFRHD",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.freeriderhd.com/*"
+            ],
+            "js": [
+                "scr/js/inject.js"
+            ]
+        }
+    ],
     "background": {
         "scripts": [
             "/scr/js/background.js"
