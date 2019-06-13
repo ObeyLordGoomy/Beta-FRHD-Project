@@ -6,12 +6,10 @@
     "author": "Calculus & GoodraFRHD",
     "background": {
         "scripts": [
-            "./app/background.js"
+            "/scr/js/background.js"
         ]
     },
     "permissions": [
-        "*://www.freeriderhd.com/*",
-        "webRequest",
-        "webRequestBlocking"
+        "*://www.freeriderhd.com/*"
     ]
 }
