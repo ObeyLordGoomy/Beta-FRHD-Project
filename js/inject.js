@@ -22,19 +22,18 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+const page = document.location.href,
+    loc = document.location.pathname.toLocaleLowerCase().slice(1).split('/');
 
-(() => {
-    const page = document.location.href,
-        loc = document.location.pathname.toLocaleLowerCase().slice(1).split('/');
+setInterval(() => {
+    if (document.location.href != page) return document.location.reload();
+}, 1000);
 
-    setInterval(()=>{
-        if(document.location.href != page) return document.location.reload();
-    }, 1000);
-    if(loc[0] == 'u' && (loc[1] == 'obeylordgoomy'||loc[1] == 'calculus')){
-        $('.profile-username').after('<div class="flex-item flex-item-no-shrink"><span class="admin_icon profile-badge" title="BetaFRHD Admin"></span></div>');
-        (loc[1] == 'obeylordgoomy') && ($('h3:contains(ObeyLordGoomy)')[0].style.color = '#bf25bf');
-    }
-    if(loc[0] == 't'){
-        $('.track-comment[data-d_name="ObeyLordGoomy"] a.bold').css('color: #bf25bf');
-    }
-})();
+if (loc[0] == 'u' && (loc[1] == 'obeylordgoomy' || loc[1] == 'calculus')) {
+    $('.profile-username').after('<div class="flex-item flex-item-no-shrink"><span class="admin_icon profile-badge" title="BetaFRHD Admin"></span></div>');
+    (loc[1] == 'obeylordgoomy') && ($('h3:contains(ObeyLordGoomy)')[0].style.color = '#bf25bf');
+}
+
+if (loc[0] == 't') {
+    $('.track-comment[data-d_name="ObeyLordGoomy"] a.bold').css('color: #bf25bf');
+}
