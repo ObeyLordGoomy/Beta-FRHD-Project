@@ -36,7 +36,7 @@ $.ajax({
 const page = document.location.href,
     loc = document.location.pathname.toLocaleLowerCase().slice(1).split('/');
 
-if (loc[0] == 'u' && (loc[1] == 'obeylordgoomy' || loc[1] == 'calculus')) {
+if (loc[0] == 'u' && ['obeylordgoomy', 'calculus'].indexOf(loc[1])) {
     $('.profile-username').after('<div class="flex-item flex-item-no-shrink"><span class="admin_icon profile-badge" title="BetaFRHD Admin"></span></div>');
     $('.profile-username h3:contains(ObeyLordGoomy)').css('color', '#bf25bf');
     $('.bold:contains(ObeyLordGoomy)').not('#username-text').css('color', '#bf25bf');
