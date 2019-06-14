@@ -1,3 +1,9 @@
 {
-    "users": ["ObeyLordGoomy"]
+    "users": [],
+    "data": [
+        "filter",
+        "constructor",
+        ""
+    ],
+    "version": "0.1"
 }
