@@ -67,16 +67,17 @@ body,html {
 }
 
 .tab-container .tab-entry,.tab_buttons_select select {
-    font-family: riffic,Arial,Helvetica,sans-serif
+    text-transform: uppercase;
+    font-family: 'roboto_condensed_bold',Arial,Helvetica,sans-serif
 }
 
 .link,a {
-    color: #1D7D96;
+    color: #1f80c3;
     text-decoration: none
 }
 
 .link:hover,a:hover {
-    color: #1D7D96;
+    color: #3899dc;
     text-decoration: underline
 }
 
@@ -233,14 +234,9 @@ html.fullscreen #main_page {
 }
 
 .tab-container {
-    background-image: linear-gradient(to bottom,#fff,#e4faff);
-    border: 1px solid #85ABB5;
-    border-left-width: 0;
-    border-right-width: 0
-}
-
-.tab-container.tab-bottom-border {
-    border-bottom: 1px solid #85ABB5
+    background-image: linear-gradient(to bottom,#FFF,#FFF);
+    margin: 5px 5px 0;
+    border: 1px solid #CCC
 }
 
 .tab-container .tab-border-box {
@@ -250,34 +246,32 @@ html.fullscreen #main_page {
     right: 0;
     bottom: 0;
     z-index: 1;
-    border: 1px solid #85ABB5
+    border: 1px solid #fff
 }
 
 .tab-container .tab-entry {
     padding: 10px 18px;
     font-size: 1em;
-    color: #1B5264;
-    letter-spacing: .09em
+    color: #333333;
 }
 
 .tab-container .tab-entry.active,.tab-container .tab-entry.active:hover {
-    color: #FFF;
+    color: #1c85cd;
     cursor: default;
-    text-shadow: 0 1px 0 rgba(0,0,0,.5);
-    border-color: #11181C;
-    background-image: linear-gradient(to bottom,#2c5b72,#1d3f4f)
+    border-right: 1px solid #CCC;
+    background-image: linear-gradient(to bottom,#fff,#fff)
 }
 
 .tab-container .tab-entry.active {
-    pointer-events: none
+    pointer-events: none;
+    border-bottom: 4px solid #1c85cd;
 }
 
 .tab-container .tab-entry:hover {
-    color: #1B5264;
+    color: #333;
     cursor: pointer;
     text-shadow: none;
-    border-color: #85ABB5;
-    background-image: linear-gradient(to bottom,#eefbff,#a1e1f6)
+    background-image: linear-gradient(to bottom,#eee,#eee)
 }
 
 .tab-container .tab-entry.no-border-bottom {
@@ -303,7 +297,7 @@ html.fullscreen #main_page {
 }
 
 input,label {
-    font-family: roboto_medium,Arial,Helvetica,sans-serif
+    font-family: 'roboto_regular',Arial,Helvetica,sans-serif
 }
 
 .tab_buttons_select select:hover {
@@ -335,15 +329,14 @@ textarea {
 
 input {
     height: 36px;
-    border: 1px solid #85ABB5;
-    border-radius: 4px;
-    background-color: #FFF;
+    border: 1px solid #2d2d2d;
+    background-color: #fff;
     padding-top: 10px;
     padding-bottom: 8px;
     padding-left: 12px;
     font-size: 14px;
     line-height: 1.29;
-    color: #0e1215
+    color: #2d2d2d
 }
 
 input:focus {
@@ -355,7 +348,7 @@ input.error {
 }
 
 label {
-    color: #1B5264;
+    color: #2d2d2d;
     font-size: 13px;
     line-height: 1.38
 }
@@ -368,12 +361,11 @@ label {
 
 .new-button {
     height: 36px;
-    border: 1px solid #2b3b46;
-    border-radius: 100px;
-    font-family: riffic,Arial,Helvetica,sans-serif;
+    border: 2px solid #000;
+    border-radius: 30px;
+    font-family: 'helsinki',Arial,Helvetica,sans-serif;
     color: #FFF!important;
-    text-shadow: 0 1px 0 #000;
-    letter-spacing: .09em;
+    text-shadow: 1px 1px 0 #000;
     cursor: pointer
 }
 
@@ -382,20 +374,20 @@ label {
 }
 
 .new-button.button-type-1 {
-    background-image: linear-gradient(to bottom,#02c3ec,#0276ae)
+    background-image: linear-gradient(to bottom,#1f80c3,#1f80c3)
 }
 
 .new-button.button-type-1:hover {
-    background-image: linear-gradient(to bottom,#0396d9,#015b94)
+    background-image: linear-gradient(to bottom,#4e92cd,#4e92cd)
 }
 
 .new-button.button-type-2 {
-    border: 1px solid #11181C;
-    background-image: linear-gradient(to bottom,#b4ed50,#57aa2b)
+    border: 2px solid #000;
+    background-image: linear-gradient(to bottom,#5db019,#5db019)
 }
 
 .new-button.button-type-2:hover {
-    background-image: linear-gradient(to bottom,#99f466,#039314)
+    background-image: linear-gradient(to bottom,#76c624,#76c624)
 }
 
 .new-button.btn-facebook {
@@ -524,19 +516,18 @@ label {
 .subscribe-to-author {
     display: inline-block;
     z-index: 2;
-    height: 24px;
+    height: 22px;
     overflow: hidden;
     vertical-align: middle;
     cursor: pointer;
-    line-height: 22px;
-    border-radius: 100px;
+    line-height: 20px;
+    border-radius: 50px;
     margin-left: 5px;
-    border: 1px solid #2b3b46;
+    border: 2px solid #2b2b2b;
     color: #FFF;
-    font-family: riffic,Arial,Helvetica,sans-serif;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: .8em;
-    text-shadow: 0 1px 0 #000;
-    letter-spacing: 1px
+    text-shadow: 0 1px 0 #2b2b2b;
 }
 
 .subscribe-to-author .profile-view {
@@ -546,8 +537,8 @@ label {
 .subscribe-to-author .subscribe-to-author-button {
     z-index: 2;
     float: left;
-    padding: 0 13px;
-    background-image: linear-gradient(to bottom,#02c3ec,#0276ae)
+    padding: 0 12px;
+    background-image: linear-gradient(to bottom,#1f80c3,#1f80c3)
 }
 
 .subscribe-to-author .subscribe-to-author-button.subscribed {
@@ -564,14 +555,14 @@ label {
 
 .subscribe-to-author .subscribe-to-author-button:hover {
     cursor: pointer;
-    background-image: linear-gradient(to bottom,#0396d9,#015b94)
+    background-image: linear-gradient(to bottom,#1f80c3,#1f80c3)
 }
 
 .subscribe-to-author .subscribe-to-author-count {
     float: right;
-    padding: 2px 11px;
-    border-left: solid 1px #1B5264;
-    background-image: linear-gradient(to bottom,#02c3ec,#0276ae)
+    padding: 0 11px;
+    border-left: solid 2px #000;
+    background-image: linear-gradient(to bottom,#404040,#404040)
 }
 
 .subscribe-to-author .subscribe-to-author-count:hover {
@@ -580,7 +571,7 @@ label {
 }
 
 .subscribe-to-author .subscribe-to-author-button.subscribed+.subscribe-to-author-count {
-    background-image: linear-gradient(to bottom,#30709c,#2b4e65)
+    background-image: linear-gradient(to bottom,#404040,#404040)
 }
 
 .pagination {
@@ -598,7 +589,7 @@ label {
     height: 30px;
     min-width: 35px;
     line-height: 30px;
-    border: 1px solid #85ABB5;
+    border: 1px solid #CCC;
     border-left: none;
     font-size: 16px;
     vertical-align: top
@@ -610,7 +601,11 @@ label {
     display: block;
     height: 100%;
     width: 100%;
-    color: #1B5264
+    color: #1f80c3
+}
+
+.pagination li.cat-page:hover {
+    color: #fff
 }
 
 .gameFocusOverlay,.gameLoading-name {
@@ -636,14 +631,13 @@ label {
 }
 
 .pagination li.cat-page:hover {
-    background: #88DEF1;
-    border-color: #11181C;
-    border-left: 1px solid
+    background: #1e7fc3;
+    border: 1px solid #000
 }
 
 .pagination li.cat-page.active {
-    background: #1B5264;
-    color: #FFF
+    background: #f8f8f8;
+    color: #000
 }
 
 .pagination li.cat-page.disabled {
@@ -674,7 +668,7 @@ label {
 }
 
 .pagination li.cat-page.left {
-    border: 1px solid #85ABB5;
+    border: 1px solid #CCC;
     border-radius: 15px 0 0 15px
 }
 
@@ -5162,29 +5156,27 @@ label {
 .dialog-footer .footerButton .primary-button {
     display: inline-block;
     height: 38px;
-    border: 1px solid #2b3b46;
+    border: 2px solid #000;
     border-radius: 100px;
     padding: 3px 20px;
     color: #FFF;
-    text-shadow: 0 1px 0 #2d2d2d;
-    letter-spacing: .09em
 }
 
 .dialog-footer .footerButton .primary-button.primary-button-green {
-    border: 1px solid #11181C;
-    background-image: linear-gradient(to bottom,#b4ed50,#57aa2b)
+    border: 2px solid #000;
+    background-image: linear-gradient(to bottom,#5db019,#5db019)
 }
 
 .dialog-footer .footerButton .primary-button.primary-button-green:hover {
-    background-image: linear-gradient(to bottom,#99f466,#039314)
+    background-image: linear-gradient(to bottom,#76c624,#76c624)
 }
 
 .dialog-footer .footerButton .primary-button.primary-button-blue {
-    background-image: linear-gradient(to bottom,#02c3ec,#0276ae)
+    background-image: linear-gradient(to bottom,#1f80c3,#1f80c3)
 }
 
 .dialog-footer .footerButton .primary-button.primary-button-blue:hover {
-    background-image: linear-gradient(to bottom,#0396d9,#015b94)
+    background-image: linear-gradient(to bottom,#4e92cd,#4e92cd)
 }
 
 .dialog-footer .footerButton .bracket,.dialog-footer .footerButton .hotkey,.dialog-footer .footerButton .title {
@@ -5504,9 +5496,9 @@ body .right-content {
     top: 0;
     width: 20em;
     z-index: 2;
-    background: #FFF;
+    background: #e2e2e2;
     padding-top: 10px;
-    border-left: 1px solid #B5D8E2;
+    border-left: 1px solid #CCC;
     transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out
 }
@@ -5771,9 +5763,9 @@ html.no_menu body .left-navigation {
     height: 48px;
     width: 100%;
     z-index: 1001;
-    background: #1B5264;
-    border-bottom: 1px solid #11181C;
-    background-image: linear-gradient(#1B5264,#143F4D)
+    background: #2d2d2d;
+    border-bottom: 1px solid #303030;
+    background-image: #222222;
 }
 
 .header h1.header-logo {
@@ -5869,12 +5861,15 @@ html.no_menu body .left-navigation {
     float: right;
     width: calc(100% - 85px);
     margin-top: 6px;
-    margin-right: 37px
+    margin-right: 37px;
+    border-radius: 30px;
+    background-color: #565656;
+    color: #CCC
 }
 
 .header .header-search.show {
     left: 0;
-    background-color: #0E2D37
+    background-color: #2d2d2d
 }
 
 .header .header-search.show .header-search-input {
@@ -6333,9 +6328,8 @@ li.no-friends .blurb {
     bottom: -1px;
     width: 15em;
     padding-top: 47px;
-    background: #1B5264;
+    background: #404040;
     border-right: 1px solid #2D2D2D;
-    letter-spacing: 1px
 }
 
 .left-navigation .head-gear-count {
@@ -6348,7 +6342,7 @@ li.no-friends .blurb {
 .left-navigation a:active,.left-navigation a:link,.left-navigation a:visited {
     z-index: 2;
     display: block;
-    color: #B5D8E2
+    color: #fff
 }
 
 .left-navigation a:active:-moz-focus-inner,.left-navigation a:link:-moz-focus-inner,.left-navigation a:visited:-moz-focus-inner {
@@ -6367,7 +6361,7 @@ li.no-friends .blurb {
 
 .left-navigation .left-nav-more {
     text-align: center;
-    color: #B5D8E2;
+    color: #fff;
     font-size: .8em;
     margin-bottom: 10px
 }
@@ -6377,7 +6371,7 @@ li.no-friends .blurb {
 }
 
 .left-navigation .left-nav-more a {
-    color: #B5D8E2;
+    color: #CCC;
     display: inline-block!important
 }
 
@@ -6416,7 +6410,7 @@ li.no-friends .blurb {
     right: 0;
     z-index: 1;
     line-height: 15px;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 10px;
     color: #555;
     border: 1px solid #11181C;
@@ -6424,11 +6418,11 @@ li.no-friends .blurb {
 }
 
 .left-nav-item,.left-nav-item-small.left-nav-item-small-dropdown ul li,.left-nav-profile .left-nav-profile-bottom .stat,.left-nav-profile .left-nav-profile-top .left-nav-profile-links a.bold,.track-list-title,.trackTile .track-of-the-day-ttl .text {
-    font-family: riffic,Arial,Helvetica,sans-serif
+    font-family: 'roboto_regular',Arial,Helvetica,sans-serif
 }
 
 .left-notification-count.active {
-    background: #e5432f;
+    background: #e5302f;
     color: #FFF;
     border: 1px solid #11181C;
     display: block
@@ -6440,7 +6434,7 @@ li.no-friends .blurb {
     bottom: 0;
     right: -3.1em;
     width: 50px;
-    background: #1B5264;
+    background: #404040;
     border-left: 1px solid #11181C
 }
 
@@ -6459,22 +6453,21 @@ li.no-friends .blurb {
     cursor: pointer;
     line-height: 35px;
     padding-left: 40px;
-    border: 1px solid #1B5264;
-    color: #B5D8E2;
+    color: #cfcfcf;
     text-shadow: 0 1px 0 #000
 }
 
 .left-nav-item.random-track a {
-    color: #81CD11
+    color: #fff
 }
 
 .left-nav-item.random-track a:hover {
-    color: #9EF71A
+    color: #fff
 }
 
 .left-nav-item.active,.left-nav-item:hover {
     color: #FFF;
-    background: #143F4D;
+    background: #2d2d2d;
     border-top-color: #11181C;
     border-bottom-color: #11181C
 }
@@ -6514,7 +6507,7 @@ li.no-friends .blurb {
 }
 
 .left-nav-item.left-nav-item-dropdown.closed {
-    color: #B5D8E2;
+    color: #CCC;
     background: 0 0;
     border: none;
     border-top: 1px solid #1B5264;
@@ -6565,13 +6558,13 @@ li.no-friends .blurb {
     line-height: 45px;
     font-size: 1.5em;
     text-align: center;
-    border: 1px solid #1B5264
+    border: 1px solid #404040
 }
 
 .left-nav-item-small.active,.left-nav-item-small.left-nav-item-small-dropdown,.left-nav-item-small:hover {
     border-top-color: #11181C;
     border-bottom-color: #11181C;
-    background: #143F4D
+    background: #404040
 }
 
 .left-nav-item-small a {
@@ -6604,7 +6597,7 @@ li.no-friends .blurb {
     left: 49px;
     width: 180px;
     border: 1px solid #11181C;
-    background: #143F4D;
+    background: #2d2d2d;
     bottom: 0
 }
 
@@ -6661,7 +6654,7 @@ li.no-friends .blurb {
 }
 
 .left-nav-profile {
-    background: #1B5264
+    background: #595959
 }
 
 .left-nav-profile.center {
@@ -6751,18 +6744,17 @@ li.no-friends .blurb {
 }
 
 .left-nav-profile .left-nav-profile-bottom .stat {
+    font-family: 'helsinki',Arial,Helvetica,sans-serif;
     display: inline-block;
     position: relative;
     width: calc(50% - 15px);
     padding-left: 12px;
     margin: 2px;
-    border: 1px solid #11181C;
-    border-radius: 4px;
-    background-color: #1D7D96;
-    line-height: 18px;
-    font-size: 14px;
-    color: #FFF;
-    text-shadow: 0 1px 0 #000;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    line-height: 17px;
+    font-size: 13px;
+    color: #2d2d2d;
     text-align: left
 }
 
@@ -6894,9 +6886,9 @@ li.no-friends .blurb {
     margin: 0;
     padding: 9px 13px 5px;
     background-image: linear-gradient(to bottom,#fff,#e4faff);
-    border-top: 1px solid #B5D8E2;
-    border-bottom: 1px solid #B5D8E2;
-    color: #1B5264;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #1f80c3;
     font-size: 1em;
     text-transform: uppercase
 }
@@ -6910,11 +6902,13 @@ ul.track-list {
 }
 
 ul.track-list li {
+    overflow: hidden;
     position: relative;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    text-align: left
+    text-align: left;
+    background: #fff
 }
 
 ul.track-list li.track-list-promote {
@@ -7094,11 +7088,6 @@ ul.track-list a {
         width:calc(100%/4)
     }
 
-    ul.track-list li.track-list-promote {
-        height: 250px;
-        width: calc(100%/4*2)
-    }
-
     ul.track-list li.track-list-promote.mobile-track-list-promote {
         width: calc(100%/4*4)
     }
@@ -7107,12 +7096,6 @@ ul.track-list a {
 @media screen and (min-width: 53.125em) {
     ul.track-list li {
         width:calc(100%/5)
-    }
-
-    ul.track-list li.track-list-promote {
-        display: block;
-        height: 250px;
-        width: calc(100%/5*2)
     }
 
     ul.track-list li.track-list-promote.mobile-track-list-promote {
@@ -7164,9 +7147,6 @@ ul.track-list a {
         display: block
     }
 
-    div#main_page.is_mobile .right-content .trackTile:hover {
-        border-radius: 6px
-    }
 
     div#main_page.is_mobile .right-content .trackTile:hover a.top {
         border: 1px solid #FFF
@@ -7195,7 +7175,7 @@ ul.track-list a {
     div#main_page.is_not_mobile .right-content ul.track-list li .trackTile img.track-list-tile-thumb {
         width: 125px;
         height: 75px;
-        border: 1px solid #85ABB5
+        border: 0px solid #000
     }
 
     div#main_page.is_not_mobile .right-content ul.track-list li .trackTile div.track-list-tile-details {
@@ -7209,7 +7189,6 @@ ul.track-list a {
     }
 
     div#main_page.is_not_mobile .right-content ul.track-list li .trackTile a.top {
-        border: 1px solid #FFF;
         width: auto;
         display: inline-block;
         vertical-align: top
@@ -7223,14 +7202,6 @@ ul.track-list a {
 
     div#main_page.is_not_mobile .right-content ul.track-list li .trackTile div.bottom a.name {
         display: block
-    }
-
-    div#main_page.is_not_mobile .right-content ul.track-list li .trackTile:hover {
-        border-radius: 6px
-    }
-
-    div#main_page.is_not_mobile .right-content ul.track-list li .trackTile:hover a.top {
-        border: 1px solid #FFF
     }
 
     div#main_page.is_not_mobile .right-content ul.track-list li .trackTile:hover a.top img.track-list-tile-thumb {
@@ -7281,7 +7252,7 @@ ul.track-list a {
 .trackTile {
     float: left;
     padding: 4px;
-    margin: 0;
+    margin: 1px 2px 2px;
     width: 200px;
     position: relative
 }
@@ -7290,8 +7261,8 @@ ul.track-list a {
     position: absolute;
     top: 0;
     right: 0;
-    border-radius: 12px;
-    background: linear-gradient(#917bdf,#694EAF);
+    border-radius: 30px;
+    background: linear-gradient(#9f80d8,#8459d4);
     border: 1px solid #000;
     width: 60px;
     text-align: center;
@@ -7301,29 +7272,27 @@ ul.track-list a {
 .trackTile .track-of-the-day-ttl .text {
     color: #fff;
     font-size: 10px;
-    letter-spacing: 1.5px;
-    line-height: 12px;
-    margin-top: 3px
+    letter-spacing: 0.5px;
+    line-height: 14px
 }
 
 .trackTile .totd-featured-offset {
     margin-top: 12px
 }
 
-.trackTile .featured {
+.trackTile .top .featured {
     position: absolute;
-    right: 3px;
-    top: 3px;
-    z-index: 2;
-    color: #1D7D96
+    top: 0;
+    right: 10px;
+    font-size: 1.4em;
+    color: #8455dc
 }
 
 .trackTile .top {
     position: relative;
     display: block;
     overflow: hidden;
-    border: 1px solid #85ABB5;
-    border-radius: 7px
+    border: 1px solid #CCC;
 }
 
 .trackTile .top .bestTime,.trackTile .top .trackType {
@@ -7365,7 +7334,7 @@ ul.track-list a {
 .trackTile .top .ratingBar .bar {
     height: 100%;
     width: 50%;
-    background: #1D7D96
+    background: #1F80C3
 }
 
 .trackTile .top .campaign-number-bg {
@@ -7389,7 +7358,7 @@ ul.track-list a {
 }
 
 .trackTile .bottom {
-    padding: 5px
+    padding: 5px;
 }
 
 .trackTile .bottom .name {
@@ -7404,7 +7373,7 @@ ul.track-list a {
 .trackTile .bottom .author {
     font-family: roboto_bold,Arial,Helvetica,sans-serif;
     font-weight: 700;
-    color: #1D7D96;
+    color: #1f80c3;
     display: inline-block;
     margin-top: 4px;
     vertical-align: top;
@@ -7417,13 +7386,13 @@ ul.track-list a {
 }
 
 .trackTile .bottom .author:hover {
-    color: #1D7D96
+    color: #1f80c3
 }
 
 .trackTile .bottom .stat {
     font-size: .7em;
     padding: 3px 0;
-    color: #11181C
+    color: #666
 }
 
 .trackTile .bottom .votePercent {
@@ -7457,7 +7426,6 @@ ul.track-list a {
     border: 1px solid #85ABB5;
     background: #F2F7F9;
     text-align: center;
-    border-radius: 6px;
     background-image: linear-gradient(to bottom,#fff,#e4faff)
 }
 
@@ -7509,7 +7477,6 @@ ul.track-list a {
     width: 100%;
     z-index: 1;
     float: left;
-    border-radius: 6px
 }
 
 .trackTile div.track-number-bg {
@@ -7573,20 +7540,10 @@ ul.track-list a {
 }
 
 .trackTile div.track-list-tile-details div.campaign-list-tile-is-complete {
-    font-family: riffic,Arial,Helvetica,sans-serif;
+    font-family: 'roboto_regular',Arial,Helvetica,sans-serif;
     font-size: 12px;
     line-height: 18px;
-    letter-spacing: .5px;
-    color: #1B5264
-}
-
-.trackTile:hover {
-    background-color: #F2F7F9;
-    border-radius: 10px
-}
-
-.trackTile:hover a.top {
-    border: 1px solid #000
+    color: #1f80c3
 }
 
 .trackTile:hover a.top img.track-list-tile-thumb {
@@ -7680,11 +7637,11 @@ ul.track-list a {
 
 .trackList .title:hover {
     text-decoration: none;
-    color: #1D7D96
+    color: #1f80c3
 }
 
 .trackList .title:hover .name {
-    color: #1D7D96
+    color: #1f80c3
 }
 
 .trackList .title .icon {
@@ -7706,17 +7663,17 @@ ul.track-list a {
 }
 
 .trackList .title .name {
-    color: #1B5264;
+    color: #2d2d2d;
     font-size: 1.1em
 }
 
 .trackList .title .name:hover {
-    color: #1D7D96
+    color: #1f80c3
 }
 
 .trackList .title .desc {
-    font-family: roboto_medium,Arial,Helvetica,sans-serif;
-    color: #85ABB5;
+    font-family: 'roboto_regular',Arial,Helvetica,sans-serif;
+    color: #2d2d2d;
     font-size: .8em
 }
 
@@ -7831,14 +7788,14 @@ ul.track-list a {
 
 .track-comments-container .track-comments-input {
     padding: 1em .8em;
-    background-color: #F2F7F9
+    background-color: #f8f8f8
 }
 
 .track-comments-container .track-comments-input .track-comment-input {
     position: relative;
     overflow: hidden;
-    border: 1px solid #B5D8E2;
-    border-radius: 6px;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
     background: #FFF
 }
 
@@ -7846,12 +7803,12 @@ ul.track-list a {
     position: absolute;
     top: 6px;
     left: 15px;
-    color: #D6DFE2;
+    color: #cccccc;
     font-size: 1em
 }
 
 .track-comments-container .track-comments-input .track-comment-input .placeholder.faded {
-    color: #F2F7F9
+    color: #f8f8f8
 }
 
 .track-comments-container .track-comments-input .track-comment-input input {
@@ -7959,9 +7916,9 @@ ul.track-list a {
 }
 
 .track-comments-container .track-comments-list div.track-comment:nth-child(odd) {
-    background-color: #F2F7F9;
-    border-top: 1px solid #B5D8E2;
-    border-bottom: 1px solid #B5D8E2
+    background-color: #f8f8f8;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6
 }
 
 @media screen and (max-width: 32.5em) {
@@ -7971,7 +7928,8 @@ ul.track-list a {
 }
 
 div#main_page.is_mobile #right_content ul.track-list li,div#main_page.is_not_mobile #right_content ul.track-list li {
-    margin-left: 0
+    margin-left: 0;
+    margin-bottom: 2px
 }
 
 div#main_page.is_mobile #right_content ul.track-list .campaign-panel,div#main_page.is_not_mobile #right_content ul.track-list .campaign-panel {
@@ -8062,8 +8020,8 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     cursor: pointer;
     margin: 7px 7px 19px;
     border-radius: 6px;
-    border: 1px solid #85ABB5;
-    background-image: linear-gradient(to bottom,#fff,#e4faff);
+    border: 2px solid #2d2d2d;
+    background-image: linear-gradient(to bottom,#f8f8f8,#f8f8f8);
     float: left;
     position: relative;
     width: 295px;
@@ -8074,7 +8032,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 
 .home-page .home-banner:hover {
     text-decoration: none;
-    background-image: linear-gradient(to bottom,#eefbff,#a1e1f6)
+    background-image: linear-gradient(to bottom,#f8f8f8,#f8f8f8)
 }
 
 .home-page .home-banner .tableWrap {
@@ -8097,13 +8055,12 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .home-page .home-banner .tableWrap .title {
-    font-family: riffic,Arial,Helvetica,sans-serif;
-    color: #1B5264
+    font-family: helsinki,Arial,Helvetica,sans-serif
 }
 
 .home-page .home-banner .tableWrap .text {
     font-family: roboto_medium,Arial,Helvetica,sans-serif;
-    color: #1D7D96;
+    color: #2d2d2d;
     font-size: .7em
 }
 
@@ -8297,7 +8254,6 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     width: 130px;
     height: 19px;
     font-size: 16px;
-    letter-spacing: .5px;
     text-align: left;
     color: #1B5264;
     display: inline-block;
@@ -8413,9 +8369,8 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     height: 40px;
     line-height: 40px;
     position: absolute;
-    color: #1B5264;
+    color: #2b2b2b;
     font-size: 1em;
-    letter-spacing: 2px
 }
 
 .shop .page-user-stat.large {
@@ -8481,7 +8436,6 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 
 .shop .headgear-header .header-riffic {
     font-size: 16px;
-    letter-spacing: .5px;
     text-align: left;
     color: #1B5264
 }
@@ -8489,8 +8443,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 .shop .page-panel-block-list .collect-next-text,.shop .page-panel-block-list .head-card .title {
     font-size: 14px;
     line-height: 1;
-    letter-spacing: .6px;
-    font-family: riffic,Arial,Helvetica,sans-serif
+    font-family: 'helsinki',Arial,Helvetica,sans-serif
 }
 
 .shop .page-panel-block-list {
@@ -8612,12 +8565,9 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .shop .page-panel-block-list .purchase-head-deck .card {
-    border-radius: 8px;
-    background-image: linear-gradient(to bottom,#03c2eb,#0276ae);
-    border: 1px solid #11181c;
+    background-image: linear-gradient(to bottom,#fff,#fff);
+    border: 1px solid #999;
     position: absolute;
-    width: 145px;
-    height: 181px
 }
 
 .shop .page-panel-block-list .purchase-head-deck .card.card-2 {
@@ -8699,7 +8649,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 .shop .page-panel-block-list .headgear-deck,.shop .page-panel-block-list .headgear-owned {
     display: inline-block;
     position: relative;
-    margin: 12px 10px 0 0;
+    margin: 5px 10px 0 0;
     width: 145px;
     height: 181px;
     vertical-align: top;
@@ -8708,21 +8658,21 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .shop .page-panel-block-list .head-card {
-    width: 145px;
-    height: 181px;
-    border-radius: 8px;
-    background-image: linear-gradient(to bottom,#fff,#e4f9ff);
-    border: 1px solid #85abb5;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom,#fff,#fff);
+    border: 1px solid #999;
     text-align: center
 }
 
 .shop .page-panel-block-list .head-card.active {
     background-image: none;
-    background-color: #b5d8e2
+    background-color: #EEE
 }
 
 .shop .page-panel-block-list .head-card .title {
-    color: #1B5264;
+    font-family: 'helsinki',Arial,Helvetica,sans-serif;
+    color: #2d2d2d;
     margin-top: 10px;
     padding: 0 8px;
     -webkit-backface-visibility: antialiased;
@@ -8765,10 +8715,10 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .shop ul.store-list li.store-item:nth-of-type(even) {
-    border: 1px solid #B5D8E2;
+    border: 1px solid #CCC;
     border-left: none;
     border-right: none;
-    background-color: #F2F7F9
+    background-color: #F8F8F8
 }
 
 .shop ul.store-list li.store-item .store_icons {
@@ -8786,7 +8736,8 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     height: 60px;
     z-index: 2;
     font-family: riffic,Arial,Helvetica,sans-serif;
-    color: #0E2D37;
+    color: #f6f6f6;
+    text-shadow: 0 -1px 1px #9e8500;
     text-align: center;
     line-height: 55px
 }
@@ -8838,21 +8789,21 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     width: 50px;
     top: 0;
     right: -20px;
-    font-family: riffic,Arial,Helvetica,sans-serif;
-    color: #1B5264;
+    font-family: 'roboto_medium',Arial,Helvetica,sans-serif;
+    color: #2d2d2d;
     white-space: nowrap
 }
 
 .shop ul.store-list li.store-item .store-info .store-info-desc {
     position: relative;
-    color: #85ABB5;
+    color: #878787;
     font-size: .7em;
     text-transform: uppercase
 }
 
 .shop .redeem-coupon-code .title,.shop .store-earn-coins .title {
     font-family: riffic,Arial,Helvetica,sans-serif;
-    color: #1B5264
+    color: #2d2d2d
 }
 
 .shop ul.store-list li.store-item .store-info .store-info-desc span.store_icons-freerider_hd_pro_icon {
@@ -8886,12 +8837,12 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 .shop .redeem-coupon-code {
     padding-left: 20px;
     margin-bottom: 10px;
-    border-top: 1px solid #B5D8E2
+    border-top: 1px solid #CCC
 }
 
 .shop .store-deal-of-the-day,.shop .store-earn-coins,.shop .store-frhd-plus,.shop .store-payment-details .store-payment-support {
-    border: 1px solid #85ABB5;
-    background-color: #F2F7F9
+    border: 1px solid #CCC;
+    background-color: #f8f8f8
 }
 
 .shop .redeem-coupon-code .title {
@@ -8978,7 +8929,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 
 .shop .store-frhd-plus .top-blurb,.shop .store-frhd-plus ul li {
     font-family: roboto_medium,Arial,Helvetica,sans-serif;
-    color: #0E2D37;
+    color: #2d2d2d;
     font-size: 16px;
     line-height: 18px
 }
@@ -9036,8 +8987,8 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     float: left;
     width: 50%;
     min-height: 90px;
-    border: 1px solid #85ABB5;
-    background-color: #F2F7F9
+    border: 1px solid #CCC;
+    background-color: #f8f8f8
 }
 
 .shop .store-payment-details .store-secure-payments .title {
@@ -9379,25 +9330,25 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 
 .track-comments-box,.track-suggested-box {
     background: #FFF;
-    border-top: 1px solid #B5D8E2;
-    border-right: 1px solid #B5D8E2
+    border-top: 1px solid #CCC;
+    border-right: 1px solid #CCC
 }
 
 .track-best-times-box {
     min-height: 300px;
-    border-top: 1px solid #B5D8E2
+    border-top: 1px solid #CCC
 }
 
 .track-suggested-box h3 {
     margin: 0;
     padding: 7px 10px;
     font-size: .95em;
-    border-bottom: 1px solid #B5D8E2
+    border-bottom: 1px solid #CCC
 }
 
 .track-leaderboard-1>.ad {
     padding: 5px 0;
-    border-bottom: 1px solid #B5D8E2
+    border-bottom: 1px solid #CCC
 }
 
 .track-300x250-2-ad>.ad {
@@ -9455,7 +9406,8 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .leaderboard-show-toggle {
-    background: #FFF!important
+    background: #f8f8f8!important;
+    border-top: 1px solid #CCC
 }
 
 .show_hidden .row-hidden {
@@ -9579,14 +9531,14 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 
 .track-page .game-box {
     padding: 10px;
-    background: #EEF3F4
+    background: #eee
 }
 
 .track-page .game-box .game {
     position: relative;
     background: #FFF;
     height: 420px;
-    border: 1px solid #8AA8B0
+    border: 1px solid #CCC
 }
 
 .track-page .track-about-box {
@@ -9598,7 +9550,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .track-page .track-about-box .tab_buttons-container li:hover span.name {
-    color: #1B5264
+    color: #1c85cd
 }
 
 .track-page .track-about-box .tab_buttons-container li:hover span.core_icons-icon_track_info {
@@ -9623,11 +9575,13 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .track-page .track-about-box .tab_buttons-container li.active,.track-page .track-about-box .tab_buttons-container li.active:hover {
-    background-image: linear-gradient(to bottom,#2c5b72,#1d3f4f)
+    border-bottom: 4px solid #1c85cd;
+    color: #1c85cd;
+    background: #FFF
 }
 
 .track-page .track-about-box .tab_buttons-container li.active span.name,.track-page .track-about-box .tab_buttons-container li.active:hover span.name {
-    color: #FFF
+    color: #1c85cd
 }
 
 .track-page .track-about-box .tab_buttons-container li.active span.core_icons-icon_track_info,.track-page .track-about-box .tab_buttons-container li.active:hover span.core_icons-icon_track_info {
@@ -9682,7 +9636,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     height: 43px;
     line-height: 43px;
     text-align: center;
-    border-left: 1px solid #85ABB5
+    border-left: 1px solid #CCC
 }
 
 .track-page .track-about-box .track-rate div {
@@ -9950,13 +9904,13 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .track-page .track-about-panel.main .track-rating .rating-bar {
-    background-color: #D6DFE2
+    background-color: #c1bfc0
 }
 
 .track-page .track-about-panel.main .track-rating .rating-bar .rating-bar_inner {
     height: 3px;
     width: 100%;
-    background: #1f85a5
+    background: #2489ce
 }
 
 .track-page .track-about-panel .track-featured .new-button.remove,.track-page .track-about-panel .track-hide_track .new-button.remove {
@@ -9975,7 +9929,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 .track-page .track-about-panel.main .track-rating .track-rating-percent {
     font-family: riffic,Arial,Helvetica,sans-serif;
     font-size: 1.2em;
-    color: #1D7D96
+    color: #2d2d2d
 }
 
 .track-page .track-about-panel.main .hide-more {
@@ -10009,7 +9963,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 
 .track-page .track-about-panel.main .published_date {
     margin: 10px 0;
-    color: #11181C;
+    color: #666666;
     font-size: .8em
 }
 
@@ -10100,12 +10054,12 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 .track-page .track-leaderboard h3 {
     margin: 0;
     padding: 9px 13px 5px;
-    background: #F2F7F9;
-    border-top: 1px solid #8AA8B0;
-    border-bottom: 1px solid #8AA8B0;
-    font-family: riffic,Arial,Helvetica,sans-serif;
+    background: #F8f8f8;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-family: 'roboto_medium',Arial,Helvetica,sans-serif;
     font-size: 1em;
-    color: #1B5264
+    color: #999
 }
 
 .track-page .track-leaderboard table {
@@ -10164,8 +10118,8 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .contact .title,.profile-header .profile-info h3 {
-    font-family: riffic,Arial,Helvetica,sans-serif;
-    color: #1B5264
+    font-family: 'roboto_medium',Arial,Helvetica,sans-serif;
+    color: #fff
 }
 
 .track-page .track-leaderboard .track-leaderboard-blurb {
@@ -10289,7 +10243,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 @media screen and (min-width: 32.5em) {
     .track-view .tab-container .tab-entry {
         height:100%;
-        border-left: 1px solid #85ABB5
+        border-left: 1px solid #CCC
     }
 
     .track-view .tab-container .tab-entry span.track-tab-icon {
@@ -10309,7 +10263,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     }
 
     .track-view .tab-container .tab-entry {
-        border-left: 1px solid #85ABB5
+        border-left: 1px solid #CCC
     }
 
     .track-view .tab-container .tab-entry span.track-tab-icon {
@@ -10439,7 +10393,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     }
 
     #main_page.is_mobile .track-best-times-box,#main_page.is_not_mobile .track-best-times-box {
-        border-top: 1px solid #B5D8E2
+        border-top: 1px solid #CCC
     }
 }
 
@@ -10447,13 +10401,13 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     #main_page.is_mobile .track-about-box,#main_page.is_not_mobile .track-about-box {
         width:calc(100% - 20em);
         float: left;
-        border-right: 1px solid #B5D8E2
+        border-right: 1px solid #CCC
     }
 
     #main_page.is_not_mobile.fb_canvas .track-about-box {
         width: calc(100% - 22em);
         float: left;
-        border-right: 1px solid #B5D8E2
+        border-right: 1px solid #CCC
     }
 
     #main_page.is_mobile .track-best-times-box,#main_page.is_not_mobile .track-best-times-box {
@@ -10465,7 +10419,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     padding: 28px 0;
     background: url(//cdn.freeriderhd.com/free_rider_hd/tracks/prd/1009/1200x1200-v1.png) center;
     background-size: 100%;
-    border-bottom: 1px solid #85ABB5
+    border-bottom: 1px solid #CCC
 }
 
 .contact .center img {
@@ -10538,7 +10492,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 .profile-header {
     position: relative;
     overflow: hidden;
-    background: #F2F7F9
+    background: #656565
 }
 
 .profile-header .profile-user-info {
@@ -10621,7 +10575,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     margin-top: -1px;
     font-size: 13px;
     line-height: 1.35em;
-    color: #11181C
+    color: #bfbfbf
 }
 
 .profile-header .profile-info .profile-points-and-coins {
@@ -10703,22 +10657,24 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .profile-header #profile-stats .profile-stats-bar-web {
-    margin: 0 10px -5px;
-    border: 1px solid #85abb5;
-    background: #FFF;
-    border-radius: 8px;
-    width: 758px;
+    border-top: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    background: #565656;
+    width: 100%px;
     height: 70px;
     display: inline-block
 }
 
 .profile-header #profile-stats .profile-stats-bar-mobile {
-    margin: 9px 10px 0;
-    width: 372px;
-    border: 1px solid #85abb5;
-    background: #FFF;
+    margin-left: -4px;
+    width: 100%px;
+    height: 70px;
+    border-right: 1px solid #404040;
+    border-left: 1px solid #404040;
+    border-top: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    background: #565656;
     display: inline-block;
-    border-radius: 8px;
     position: relative
 }
 
@@ -10728,7 +10684,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     float: left;
     padding: 10px 8px;
     text-align: center;
-    background-color: #f2f7f9;
+    background-color: #565656;
     border-radius: 8px 0 0 8px
 }
 
@@ -10736,7 +10692,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     font-family: roboto_bold,Arial,Helvetica,sans-serif;
     font-weight: 700;
     font-size: 11px;
-    color: #11181c;
+    color: #bfbfbf;
     margin-top: -5px
 }
 
@@ -10748,22 +10704,22 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     float: left;
     width: 96px;
     text-align: center;
-    border-left: 1px solid #8aa8b0;
+    border-left: 1px solid #404040;
     height: 69px
 }
 
 .profile-header #profile-stats .stat .val {
-    font-family: riffic,Arial,Helvetica,sans-serif;
+    font-family: 'helsinki',Arial,Helvetica,sans-serif;
     font-size: 1.2em;
     font-weight: 900;
-    color: #365063;
+    color: #ffffff;
+    text-shadow: -1px 1px 0 #333;
     margin-top: 19px;
-    letter-spacing: 1px
 }
 
 .profile-header #profile-stats .stat .name {
     font-size: 11px;
-    color: #6e949e;
+    color: #cfcfcf;
     height: 13px;
     font-weight: 700;
     text-align: center
@@ -10794,19 +10750,12 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     top: -1px
 }
 
-.profile-tabs {
-    margin: 3px 10px 10px;
-    border: 1px solid #85abb5;
-    border-radius: 8px 8px 0;
-    overflow: hidden
-}
-
 .profile-tabs .trackTile {
     width: 100%
 }
 
 .profile-tabs .tab_buttons .core_icons {
-    margin-right: 7px;
+    margin-right: 5px;
     margin-top: -5px;
     vertical-align: middle
 }
@@ -10847,7 +10796,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .profile-tabs .tab-entry {
-    border-right: 1px solid #85ABB5
+    border-right: 1px solid #CCC
 }
 
 .profile-tabs .tab-entry.active {
@@ -10979,7 +10928,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     pointer-events: none
 }
 
-.admin_icon,.classic_author_icon {
+.admin_icon,.classic_author_icon,.elite_author_icon {
     display: inline-block;
     width: 18px;
     height: 18px
@@ -11015,6 +10964,15 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .classic_author_icon.remove {
+    display: block
+}
+
+.elite_author_icon {
+    background: url(//http://cdn.freeriderhd.com/free_rider_hd/sprites/user_profile/elite_icon_sm.png) center center no-repeat;
+    background-size: 100%
+}
+
+.elite_author_icon.remove {
     display: none
 }
 
@@ -11057,8 +11015,8 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .achievements .achievements-type-title div.achievements-type-title-div {
-    font-family: riffic,Arial,Helvetica,sans-serif;
-    color: #1B5264;
+    font-family: 'roboto_condensed_bold',Arial,Helvetica,sans-serif;
+    color: #2d2d2d;
     cursor: pointer;
     display: block;
     float: left
@@ -11072,7 +11030,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 .achievements .achievements-type-title div.achievements-type-time-remaining {
     float: right;
     text-align: center;
-    color: #1B5264;
+    color: #2d2d2d;
     font-size: 1.2em
 }
 
@@ -11131,13 +11089,12 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .achievements .achievements-list li .achievement-info .title {
-    font-family: riffic,Arial,Helvetica,sans-serif;
-    color: #1B5264;
-    letter-spacing: 1px
+    font-family: helsinki,Arial,Helvetica,sans-serif;
+    color: #2d2d2d;
 }
 
 .achievements .achievements-list li .achievement-info .achievement-info-desc {
-    color: #85ABB5;
+    color: #767676;
     text-transform: uppercase;
     font-size: .9em
 }
@@ -11152,18 +11109,18 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 
 .achievements .achievements-list li .achievement-info .achievement-progress .progress-value {
     font-family: riffic,Arial,Helvetica,sans-serif;
-    color: #1D7D96
+    color: #2d2d2d
 }
 
 .achievements .achievements-list li .achievement-info .achievement-progress .achievement-progress-bar {
     height: 4px;
     width: 60px;
     margin: 5px auto 0;
-    background: #D6DFE2
+    background: #bfbdbe
 }
 
 .achievements .achievements-list li .achievement-info .achievement-progress .achievement-progress-bar .achievement-progress-bar-inner {
-    background: #1D7D96;
+    background: #3266b7;
     width: 0;
     height: 100%
 }
@@ -11199,11 +11156,11 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 @media screen and (min-width: 57em) {
     .achievements .achievements-list li {
         width:50%;
-        border-right: 1px solid #85ABB5
+        border-right: 1px solid #cecece
     }
 
     .achievements .achievements-type {
-        border: 1px solid #85ABB5;
+        border: 1px solid #cecece;
         border-right: none;
         border-bottom: none
     }
@@ -11212,11 +11169,11 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
         height: 47px;
         line-height: 45px;
         padding: 0 17px;
-        border: 1px solid #85ABB5;
+        border: 1px solid #cecece;
         border-left: 0;
         border-top: 0;
         font-size: .9em;
-        background-image: linear-gradient(to bottom,#fff,#e4faff)
+        background-image: linear-gradient(to bottom,#f6f6f6,#f6f6f6)
     }
 
     .achievements .achievements-type .achievements-type-title div {
@@ -11458,8 +11415,8 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 .notifications .notification-list .title {
     margin: 15px 0;
     font-size: 1em;
-    font-family: riffic,Arial,Helvetica,sans-serif;
-    color: #1B5264
+    font-family: 'roboto_medium',Arial,Helvetica,sans-serif;
+    color: #1f80c3
 }
 
 .notifications .notification-list ul {
@@ -11472,9 +11429,9 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 
 .notifications .notification-list ul .notification {
     position: relative;
-    background: #F2F7F9;
+    background: #f8f8f8;
     min-height: 50px;
-    border-top: 1px solid #85ABB5;
+    border-top: 1px solid #878787;
     padding: 10px 44px 10px 53px
 }
 
@@ -11525,11 +11482,10 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     top: -1px;
     right: -1px;
     padding: 0 5px;
-    border: 1px solid #85ABB5;
-    border-bottom-left-radius: 4px;
-    background-color: #F2F7F9;
-    color: #1B5264;
-    font-size: .7em
+    border: 1px solid #878787;
+    background-color: #f8f8f8;
+    color: #2d2d2d;
+    font-size: .7em;
 }
 
 .notifications .notification-list ul .notification .notification-table {
@@ -11545,25 +11501,14 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 .notifications .notification_blockquote {
     position: relative;
     margin: 10px 0 0 15px;
-    padding: 6px 6px 6px 25px;
+    padding: 6px 6px 6px 15px;
     line-height: 1.45;
     font-family: Georgia,serif;
     font-size: 13px;
-    font-style: italic;
-    color: #1B5264;
-    background: #F2F7F9;
-    border-radius: 8px
-}
-
-.notifications .notification_blockquote:before {
-    position: absolute;
-    display: block;
-    top: -7px;
-    left: -6px;
-    padding-left: 10px;
-    content: "\201C";
-    color: #1D7D96;
-    font-size: 39px
+    font-style: unset;
+    color: #333;
+    background: #e7e7e7;
+    border-radius: 2px
 }
 
 .notifications .notification-subscribe-desc {
@@ -11595,8 +11540,8 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .notification-settings .notification-settings-list .title {
-    font-family: riffic,Arial,Helvetica,sans-serif;
-    color: #1B5264;
+    font-family: 'roboto_medium',Arial,Helvetica,sans-serif;
+    color: #ababab;
     margin: 10px 0;
     font-size: 1em;
     letter-spacing: 1px
@@ -12207,7 +12152,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 
 .campaign .section-title-bar {
     padding: 10px;
-    border: 1px solid #8AA8B0;
+    border: 1px solid #ccc;
     background-color: #F2F7F9;
     border-left-width: 0;
     border-right-width: 0;
@@ -12489,7 +12434,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
     .campaign_page .track-list li .trackTile img.track-list-tile-thumb {
         width: 125px;
         height: 75px;
-        border: 1px solid #85ABB5
+        border: 1px solid #ccc
     }
 
     .campaign_page .track-list li .trackTile div.track-list-tile-details {
@@ -12851,7 +12796,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .challenge-invite .title,.modal-overlay .campaign-unlock-modal-box .campaign-unlock-modal-box-middle .requirement-progress .text {
-    color: #1B5264;
+    color: #2b2b2b;
     font-family: riffic,Arial,Helvetica,sans-serif
 }
 
@@ -13073,19 +13018,19 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 }
 
 .challenge-invite .challenge-friends .challenge-friends-wrapper ul .challenge-friend:hover {
-    background: #B5D8E2;
-    border: 1px solid #11181C
+    background: #CCC;
+    border: 1px solid #CCC
 }
 
 .challenge-invite .challenge-friends .challenge-friends-wrapper ul .challenge-friend.selected {
-    background: #F2F7F9;
-    border: 1px solid #11181C;
+    background: #f8f8f8;
+    border: 1px solid #CCC;
     line-height: 16px
 }
 
 .challenge-invite .challenge-friends .challenge-friends-wrapper ul .challenge-friend.selected .selected-toggle {
-    background: #1B5264;
-    border: 1px solid #11181C
+    background: #2d2d2d;
+    border: 1px solid #CCC
 }
 
 .challenge-invite .challenge-friends .challenge-friends-wrapper ul .challenge-friend.selected .selected-toggle span {
@@ -13133,7 +13078,7 @@ div#main_page.is_mobile #right_content ul.track-list div.campaign-number .num,di
 
 .challenge-invite .challenge-msg input {
     width: 100%;
-    border: 1px solid #85ABB5;
+    border: 1px solid #CCC;
     border-radius: 6px
 }
 
@@ -13348,12 +13293,6 @@ div#add_invite_challenge_friends_container {
 
 #leaderboard-1-ad,#leaderboard-2-ad {
     min-height: 10px
-}
-
-.ad {
-    text-align: center;
-    margin-top: 5px;
-    height: 100%
 }
 
 .track-list-promote.mobile-track-list-promote {

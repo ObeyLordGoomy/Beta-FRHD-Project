@@ -232,7 +232,7 @@ html {
     overflow-y: scroll;
     -webkit-text-size-adjust: none;
     font-family: 'roboto_regular',Arial,Helvetica,sans-serif;
-    background: #FFF
+    background: #fff;
 }
 
 body {
@@ -352,12 +352,12 @@ html,body {
 }
 
 .button.green {
-    background: #5db019 !important;
+    background: #5DB019 !important;
     text-shadow: 1px 1px 0 #000
 }
 
 .button.green:hover {
-    background: #76c624 !important
+    background: #75C624 !important
 }
 
 .button.facebook {
