@@ -11,7 +11,7 @@
                 "*://freeriderhd.com/*"
             ],
             "js": [
-                "js/inject.js"
+                "js/injecter.js"
             ],
             "css" : [
                 "css/combined.css",
@@ -28,5 +28,8 @@
         "webRequest",
         "webRequestBlocking",
         "*://*.freeriderhd.com/*"
+    ],
+    "web_accessible_resources": [
+        "js/main.js"
     ]
 }
