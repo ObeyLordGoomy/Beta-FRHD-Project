@@ -1,3 +1,4 @@
+# Project moved [here](https://github.com/Calculus6/Freerider-BETA)!
 # Beta-FRHD-Project
 The Beta FRHD Project is an unnoficial project by GoodraFRHD and Calculus aimed to restore the look of FreeRiderHD to how it looked in the past.
 
