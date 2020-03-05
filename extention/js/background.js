@@ -23,13 +23,13 @@ SOFTWARE.
 */
 
 chrome.webRequest.onBeforeRequest.addListener(({ url }) => {
-    const r = url.match(/https:\/\/cdn\.freeriderhd\.com\/free_rider_hd\/(styles\/application\/|assets\/styles\/combined\/gui\/)(frhd_app|combined)\.min/g);
-    if (r == void 0 || r[0] == void 0 || r[1] == void 0) return;
-    const nUrl = chrome.runtime.getURL(`css/${r[1]}.css`);
     return {
-        redirectUrl: nUrl
-    };
+		cancel: !0
+	};
 }, {
-    urls: ['*://cdn.freeriderhd.com/*'],
+    urls: [
+		'https://cdn.freeriderhd.com/free_rider_hd/assets/styles/combined/gui/combined.min.*.css',
+		'https://cdn.freeriderhd.com/free_rider_hd/styles/application/frhd_app.min.*.css'
+	],
     types: ['stylesheet']
 }, ['blocking']);

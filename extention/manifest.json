@@ -8,10 +8,14 @@
         {
             "matches": [
                 "*://www.freeriderhd.com/*",
-                "*://cdn.freeriderhd.com/*"
+                "*://freeriderhd.com/*"
             ],
             "js": [
                 "js/inject.js"
+            ],
+            "css" : [
+                "css/combined.css",
+                "css/frhd_app.css"
             ]
         }
     ],
@@ -21,6 +25,8 @@
         ]
     },
     "permissions": [
-        "*://www.freeriderhd.com/*"
+        "webRequest",
+        "webRequestBlocking",
+        "*://*.freeriderhd.com/*"
     ]
 }
